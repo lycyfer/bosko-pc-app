@@ -1,0 +1,53 @@
+.footer {
+    min-height: 640px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.footer_build_list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.footer_build_img {
+/*     width: 30px;
+    height: 31px; */
+    padding-right: 30px;
+}
+
+.footer_build_descr {
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FBFBFB;
+}
+
+.footer_title {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: start;
+    color: #FBFBFB;
+}
+
+.footer_subtitle {
+    text-align: start;
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #FFFDFD;
+    padding-bottom: 25px;
+}

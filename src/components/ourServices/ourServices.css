@@ -1,0 +1,118 @@
+.services {
+    min-height: 864px;
+    width: 1200px;
+    padding: 46px 0 80px 0;
+    margin: 0 auto;
+}
+
+.services_row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services_title {
+    text-transform: uppercase;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FBFBFB;
+    padding-top: 95px;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.services_card {
+    position: relative;
+    width: 320px;
+    height: 284px;
+    margin: 18px auto;
+    filter: drop-shadow(10px 7px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.services_title_main {
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    margin-bottom: 65px;
+}
+
+.services_plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 26px;
+    height: 26px;
+    border-radius: 100%;
+    background-color: #000000;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.services_plus:hover {
+    background-image: none;
+    background-color: #fff;
+    color: #000000;
+}
+
+.services_plus::before {
+    content: '';
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: aqua;
+    transition: all 0.5s;
+}
+
+.services_plus::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    height: 14px;
+    width: 2px;
+    transition: all 1s;
+    background-color: aqua;
+}
+
+.services_card_pc {
+    margin: 0 auto;
+    position: relative;
+    height: 320px;
+    /* filter: drop-shadow(10px 7px 4px rgba(0, 0, 0, 0.25)); */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services_video {
+    width: 1200px;
+    height: 320px;
+    position: absolute;
+    left: -50%;
+    transform: translateX(50%);
+    z-index: -1;
+}
+
+.services_title_pc {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 31px;
+    color: #FCFCFC;
+    text-transform: uppercase;
+    padding-top: 150px;
+}

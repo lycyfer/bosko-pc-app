@@ -1,0 +1,54 @@
+.communication {
+    padding-top: 60px;
+    min-height: 700px;
+}
+
+.communication_title {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.communication_flex {
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.communication_block_img {
+    width: 227px;
+    height: 235px;
+}
+
+.communication_block_title {
+    padding-top: 22px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.communication_block_subtitle {
+    width: 357px;
+    height: 48px;
+    padding-top: 22px;
+    font-family: 'Saira', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}

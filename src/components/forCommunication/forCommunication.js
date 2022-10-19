@@ -8,7 +8,7 @@ import './forCommunication.css'
 
 const ForCommunication = () => {
     return (
-        <div className="communication">
+        <div className="communication" id='request'>
             <h2 className="communication_title">для связи</h2>
             <div className='communication_flex'>
             <div className="communication_block">

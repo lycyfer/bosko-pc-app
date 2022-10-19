@@ -14,7 +14,7 @@ const Header = () => {
     const [click, setClick] = useState(false);
 
     return (
-        <div className='header'>
+        <div className='header' id='main'>
             <View isVisble={click} onClose={() => setClick(false)} />
             <video className='headerVideo' autoPlay loop muted>
                 <source src={headerVideo} type='video/mp4' />
@@ -82,7 +82,7 @@ const View = (props) => {
     }
 
     return !props.isVisble ? null : (
-        <div className='modal' >
+        <div className='modal'>
             <div className='headerForm'>
                 <Form onSubmit={handleOnSubmit}>
                     <Form.Field

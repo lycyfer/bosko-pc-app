@@ -1,0 +1,206 @@
+.price_jopa {
+    background-color: #fff;
+    width: 100%;
+    min-height: 400px;
+    /* border-top-left-radius: 56px;
+    border-top-right-radius: 56px; */
+    /* border-radius: 56px; */
+}
+
+.price_list_jopa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price_main_title {
+    font-family: 'Russo One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+
+    text-align: center;
+    text-transform: uppercase;
+    /* padding-top: 50px; */
+    color: #000;
+}
+
+.price_block_pc {
+    width: 560px;
+    height: 48px;
+    background: #FFFFFF;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(7, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+}
+
+.price_block_notebook {
+    width: 560px;
+    height: 48px;
+    /* margin-right: 50px; */
+    background: #FFFFFF;
+    /* border-radius: 56px; */
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(7, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+}
+
+.price_block_wi-fi {
+    width: 640px;
+    height: 48px;
+    /* margin-right: 50px; */
+    background: #FFFFFF;
+    /* border-radius: 56px; */
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(7, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+}
+
+.price_block_virus {
+    width: 560px;
+    height: 48px;
+    /* margin-right: 50px; */
+    background: #FFFFFF;
+    /* border-radius: 56px; */
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(7, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+}
+
+.price_block_data {
+    width: 560px;
+    height: 48px;
+    /* margin-right: 50px; */
+    background: #FFFFFF;
+    /* border-radius: 56px; */
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(7, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+}
+
+
+.price_block_windows {
+    width: 560px;
+    height: 48px;
+    /* margin-right: 50px; */
+    background: #FFFFFF;
+    /* border-radius: 56px; */
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(7, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+}
+
+.price_block_app {
+    width: 560px;
+    height: 48px;
+    /* margin-right: 50px; */
+    background: #FFFFFF;
+    /* border-radius: 56px; */
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgba(7, 0, 0, 0.25);
+    transition: all .5s ease-in-out;
+}
+
+
+
+.price_block_pc:hover {
+    padding-bottom: 620px;
+    transition: all .5s ease-in-out;
+}
+
+.price_block_notebook:hover {
+    padding-bottom: 570px;
+    transition: all .5s ease-in-out;
+}
+
+.price_block_wi-fi:hover {
+    padding-bottom: 175px;
+    transition: all .5s ease-in-out;
+}
+
+.price_block_virus:hover {
+    padding-bottom: 185px;
+    transition: all .5s ease-in-out;
+}
+
+.price_block_data:hover {
+    padding-bottom: 200px;
+    transition: all .5s ease-in-out;
+}
+
+.price_block_windows:hover {
+    padding-bottom: 175px;
+    transition: all .5s ease-in-out;
+}
+
+.price_block_app:hover {
+    padding-bottom: 135px;
+    transition: all .5s ease-in-out;
+}
+
+
+.price_title {
+    font-family: 'Russo One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #1EACC7;
+    color: #fff;
+    overflow: hidden;
+    /* box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.price_block:hover {
+    padding-bottom: 750px;
+    transition: all .5s ease;
+}
+
+
+.price_list_item {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.price_list_item_flex {
+    display: flex;
+    justify-content: space-between;
+    /* border-bottom: 1px solid #000000; */
+    min-height: 30px;
+    margin-top: 10px;
+}
+
+.price_name {
+    font-weight: 400;
+    font-size: 17px;
+    font-family: 'Russo One';
+    align-items: center;
+    text-align: start;
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 12px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.price_value {
+    font-family: 'Russo One';
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 12px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #1EACC7;
+}

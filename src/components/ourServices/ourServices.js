@@ -19,7 +19,7 @@ const OurServices = (props) => {
         )
     })
     return (
-        <div className='services'>
+        <div className='services' id='services'>
             <h2 className='services_title_main'>Наши услуги</h2>
             <Row className='services_row'>
                 {element}

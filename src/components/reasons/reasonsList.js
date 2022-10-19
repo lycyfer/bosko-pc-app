@@ -23,7 +23,7 @@ const ReasonsList = (props) => {
         )
     })
     return (
-        <section class="reasons">
+        <section class="reasons" id='advantages'>
             <h2 className='reasons_title'>
                 6 причин работать с нами
             </h2>

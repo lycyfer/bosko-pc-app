@@ -205,19 +205,6 @@ class App extends Component {
         <OurServices services={this.state.dataSeervices} />
         <Promobuild slider={this.state.slider} />
         <ForCommunication />
-{/*         <Footer build={this.state.build} services={this.state.services} contacts={this.state.contacts} />
-        <FooterSecond
-          build={this.state.build}
-          services={this.state.services}
-          contacts={this.state.contacts}
-          testPrice={this.state.testPrice}
-          onFilterSelect={this.onFilterSelect}
-          onFilterSelectSecond={this.onFilterSelectSecond}
-          visibleData={visibleData}
-          visibleBuild={visibleBuild}
-          deleteItem={this.deleteItem}
-          testData={this.state.testData} /> */}
-          {/* <PriceFooter/> */}
           <PriceList/>
       </div>
     )

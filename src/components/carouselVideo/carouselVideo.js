@@ -14,36 +14,30 @@ export const CarouselVideo = ({ children }) => {
             const newOffset = currentOffset + PAGE_WIDTH;
 
             console.log(newOffset)
-            if (newOffset == 400) {
+            if (newOffset === 400) {
                 return -800
             }
-            // return Math.min(newOffset, 0)
             return newOffset
         })
     }
     const handleRightArrowClick = () => {
         setOffset((currentOffset) => {
             const newOffset = currentOffset - PAGE_WIDTH;
-
-            // const maxOffset = - (PAGE_WIDTH * (pages.length - 1))
-
             if (newOffset < -800) {
                 return 0
             }
-
-            /* return Math.max(newOffset, maxOffset)  */
             return newOffset
         })
     }
 
     const handleClick = (e) => {
-        if(e.target.className == 'dot1') {
+        if(e.target.className === 'dot1') {
             return setOffset(0)
         } 
-        if(e.target.className == 'dot2') {
+        if(e.target.className === 'dot2') {
             return setOffset(-400)
         }
-        if(e.target.className == 'dot3') {
+        if(e.target.className === 'dot3') {
             return setOffset(-800)
         }
     }
@@ -62,7 +56,7 @@ export const CarouselVideo = ({ children }) => {
     }, [])
 
     return (
-        <div className='jopa'>
+        <div className='sliderVideo'>
             <div className="main-container-video">
                 <FaChevronLeft className='arrow' onClick={handleLeftArrowClick} />
                 <div className="window-video">
@@ -73,9 +67,9 @@ export const CarouselVideo = ({ children }) => {
                 <FaChevronRight className='arrow' onClick={handleRightArrowClick} />
             </div>
             <div className='dots'>
-                <button className={offset == 0 ? 'dot1 active-dot' : 'dot1'} onClick={handleClick}></button>
-                <button className={offset == -400 ? 'dot2 active-dot' : 'dot2'} onClick={handleClick}></button>
-                <button className={offset == -800 ? 'dot3 active-dot' : 'dot3'} onClick={handleClick}></button>
+                <button className={offset === 0 ? 'dot1 active-dot' : 'dot1'} onClick={handleClick}></button>
+                <button className={offset === -400 ? 'dot2 active-dot' : 'dot2'} onClick={handleClick}></button>
+                <button className={offset === -800 ? 'dot3 active-dot' : 'dot3'} onClick={handleClick}></button>
             </div>
         </div>
     )

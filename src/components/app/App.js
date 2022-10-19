@@ -6,8 +6,6 @@ import ReasonsList from '../reasons/reasonsList';
 import OurServices from '../ourServices/ourServices';
 import Promobuild from '../promoBuild/promoBuild';
 import ForCommunication from '../forCommunication/forCommunication';
-import Footer from '../footer/footer';
-import FooterSecond from '../footerSecond/footerSecond';
 import PriceList from '../priceList/priceList';
 
 import car from '../../resources/logo/free-icon-car-5670285.png'

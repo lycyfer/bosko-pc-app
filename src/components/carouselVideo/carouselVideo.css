@@ -43,12 +43,6 @@
 }
 
 .dot2 {
-    /*    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    margin-right: 10px;
-    border: 2px solid rgba(1, 42, 52, 1);
-    background: #FEFEFE; */
     width: 83px;
     height: 7px;
 
@@ -66,7 +60,6 @@
 
 .active-dot {
     background: #1EACC7;
-    /* height: 10px; */
     padding-top: 5px;
     transition: ease-in-out 0.5s;
 }

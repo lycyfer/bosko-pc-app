@@ -1,20 +1,13 @@
-import { useState } from 'react'
 
 import './priceList.css'
 
 const PriceList = () => {
 
-    const [pc, setPC] = useState(false)
-
-    const clickPC = () => {
-        return pc ? setPC(false) : setPC(true)
-    }
-
     return (
-        <div className='price_jopa' id='prices'>
+        <div className='price_footer' id='prices'>
             <h2 className='price_main_title'>Цены</h2>
             <div className='price_list_jopa'>
-                <div className='price_block_pc' onClick={clickPC}>
+                <div className='price_block_pc'>
                     <div className='price_title'>Цены на ремонт персональных компьютеров</div>
                     <div className='price_list_item'>
                         <div className='price_list_item_flex'>

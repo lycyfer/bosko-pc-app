@@ -17,7 +17,6 @@ export const Carousel = ({ children }) => {
             if (newOffset === 1300) {
                 return -3900
             }
-            // return Math.min(newOffset, 0)
             return newOffset
         })
     }
@@ -31,14 +30,11 @@ export const Carousel = ({ children }) => {
                 return 0
             }
             console.log(newOffset)
-            /* return Math.max(newOffset, maxOffset)  */
             return newOffset
         })
     }
 
     const handleClick = (e) => {
-        // setOffset(0)
-        // console.log(e.target.className)
         if(e.target.className === 'dot1') {
             return setOffset(0)
         } 
@@ -65,19 +61,6 @@ export const Carousel = ({ children }) => {
                 })
             }))
     }, [children])
-
-
-/*     useEffect(() => {
-        setInterval(() => {
-            console.log(offset)
-            if(offset != -3900) {
-                setOffset((offset - PAGE_WIDTH))
-            } else {
-                setOffset(0)
-            }
-            
-        },5000)
-    }) */
 
     return (
         <div>

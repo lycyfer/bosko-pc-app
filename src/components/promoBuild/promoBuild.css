@@ -1,9 +1,10 @@
 .promo {
-    width: 100%;
-    height: 750px;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  min-height: 750px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 /* .promo_slider {
@@ -20,208 +21,216 @@
 }
 
 .promo_video {
-    width: 458px;
-    height: 724px;
-    /* border-radius: 56px; */
-    /* background: #D9D9D9; */
-    margin-top: 50px;
+  width: 458px;
+  height: 724px;
+  /* border-radius: 56px; */
+  /* background: #D9D9D9; */
+  margin-top: 50px;
 }
 
 .promo_video_tiktok {
-    margin-top: 10px;
-    width: 400px;
-    height: 690px;
-    border-radius: 56px;
+  margin-top: 10px;
+  width: 400px;
+  height: 690px;
+  border-radius: 56px;
 }
 
 .item {
-    display: flex;
-    justify-content: center;
-    width: 1300px;
-    height: 700px;
-  
-  }
-  
+  display: flex;
+  justify-content: center;
+  width: 1300px;
+  height: 700px;
 
-  .span-1 {
-    color: #161729;
-    font-size: 32px;
-  }
-  
-  .span-2 {
-    color: #990708;
-    font-size: 32px;
-  }
-  
-  .span-3 {
-    color: #001415;
-    font-size: 32px;
-  }
-  
-  .test-flex-1 {
-    width: 600px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  
-  }
-  
-  .test-flex-2 {
-    width: 600px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  
-  }
-  
-  .button-1 {
-    width: 230px;
-    height: 63px;
-    border-radius: 4px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 63px;
-    font-family: 'Russo One';
-/*     display: flex;
+}
+
+
+.span-1 {
+  color: #161729;
+  font-size: 32px;
+}
+
+.span-2 {
+  color: #990708;
+  font-size: 32px;
+}
+
+.span-3 {
+  color: #001415;
+  font-size: 32px;
+}
+
+.test-flex-1 {
+  width: 660px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.test-flex-2 {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.button-href {
+  color: #fff;
+}
+
+.button-href:hover {
+  color: rgba(256, 255, 255, 0.7)
+}
+
+.button-1 {
+  width: 230px;
+  height: 63px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 63px;
+  font-family: 'Russo One';
+  /*     display: flex;
     align-items: center;
     text-align: center; */
-    text-transform: uppercase;
-    background-color: rgba(1, 42, 52, 1);
-    color: #FFFFFF;
-    border: none;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-  }
-  
-  .button-2 {
-    width: 230;
-    height: 63px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 63px;
-    border-radius: 4px;
-    font-family: 'Russo One';
-    text-align: center;
-    text-transform: uppercase;
-    border: none;
-    color: #FFFFFF;
-    background: #990708;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-  }
-  
-  .button-3 {
-    width: 230;
-    height: 63px;
-    border-radius: 4px;
-    font-family: 'Russo One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 63px;
-    font-family: 'Russo One';
-    text-align: center;
-    text-transform: uppercase;
-    background-color: rgba(1, 42, 52, 1);
-    color: #FFFFFF;
-    border: none;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-  }
-  
-  .button-4 {
-    width: 230px;
-    height: 63px;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 63px;
-    border-radius: 4px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Russo One';
-    color: #FFFFFF;
-    background: #990708;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
-    border: none
-  }
-  
-  .item-1 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../resources/img/abstrakciya-linii-biryuzovyy-6449.jpg') center center/cover no-repeat;
-    /* center center/cover center */
-    /* border: 1px solid #000000;
+  text-transform: uppercase;
+  background-color: rgba(1, 42, 52, 1);
+  color: #FFFFFF;
+  border: none;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.button-2 {
+  width: 230;
+  height: 63px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 63px;
+  border-radius: 4px;
+  font-family: 'Russo One';
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  color: #FFFFFF;
+  background: #990708;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.button-3 {
+  width: 230;
+  height: 63px;
+  border-radius: 4px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 63px;
+  font-family: 'Russo One';
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(1, 42, 52, 1);
+  color: #FFFFFF;
+  border: none;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.button-4 {
+  width: 230px;
+  height: 63px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 63px;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Russo One';
+  color: #FFFFFF;
+  background: #990708;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  border: none
+}
+
+.item-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../resources/img/abstrakciya-linii-biryuzovyy-6449.jpg') center center/cover no-repeat;
+  /* center center/cover center */
+  /* border: 1px solid #000000;
     border-radius: 56px; */
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 63px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Russo One';
-    color: #FEFEFE;
-  }
-  
-  .item-2 {
-    font-family: 'Russo One';
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../resources/img/1636729360_57-modnica-club-p-belaya-liniya-na-chernom-fone-70.jpg') center center/cover no-repeat;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 63px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .item-3 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../resources/img/android-50-lollipop-material-dizajn-linii-abstrakciya-polosy-biryuzovyj-belyj.jpg') center center/cover no-repeat;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 63px;
-    font-family: 'Russo One';
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-  
-    color: #FFFFFF;
-  }
-  
-  .item-4 {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../resources/img/1636729327_34-modnica-club-p-belaya-liniya-na-chernom-fone-42.jpg') center center/cover no-repeat;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 63px;
-    font-family: 'Russo One';
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-  
-    color: #FFFFFF;
-  }
-  
-  .img-1 {
-    width: 546px;
-    height: 490px;
-  }
-  
-  .img-2 {
-    width: 436px;
-    height: 451px;
-  }
-  
-  .img-3 {
-    width: 512px;
-    height: 527px;
-  }
-  
-  .img-4 {
-    width: 548px;
-    height: 528px;
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 63px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Russo One';
+  color: #FEFEFE;
+}
+
+.item-2 {
+  font-family: 'Russo One';
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../resources/img/1636729360_57-modnica-club-p-belaya-liniya-na-chernom-fone-70.jpg') center center/cover no-repeat;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 63px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.item-3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../resources/img/android-50-lollipop-material-dizajn-linii-abstrakciya-polosy-biryuzovyj-belyj.jpg') center center/cover no-repeat;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 63px;
+  font-family: 'Russo One';
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.item-4 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../resources/img/1636729327_34-modnica-club-p-belaya-liniya-na-chernom-fone-42.jpg') center center/cover no-repeat;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 63px;
+  font-family: 'Russo One';
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.img-1 {
+  width: 546px;
+  height: 490px;
+}
+
+.img-2 {
+  width: 436px;
+  height: 451px;
+}
+
+.img-3 {
+  width: 512px;
+  height: 527px;
+}
+
+.img-4 {
+  width: 548px;
+  height: 528px;
+}
 
 /* .promo_pc {
     width: 546px;

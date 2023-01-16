@@ -20,9 +20,9 @@ const Header = () => {
                 <source src={headerVideo} type='video/mp4' />
             </video>
             <p className='header_descr'>
-                Ремонт компьютеров в краснодаре
+                Ремонт компьютеров в Краснодаре
             </p>
-            <button class="header_btn"  onClick={() => setClick(true)} >
+            <button class="header_btn" onClick={() => setClick(true)} >
                 Отправить заявку!
             </button>
         </div>
@@ -50,14 +50,14 @@ const View = (props) => {
 
     const cloceForm = () => {
         document.addEventListener('keydown', kaydownHandler);
-        return () => document.removeEventListener('keydown',kaydownHandler)
-    } 
+        return () => document.removeEventListener('keydown', kaydownHandler)
+    }
 
     const hidenForm = () => {
         const onClick = e => myRef.current.contains(e.target) || props.onClose();
         document.addEventListener('click', onClick);
         return () => document.removeEventListener('click', onClick);
-    }  
+    }
 
     const handleOnSubmit = (e) => {
         e.preventDefault();

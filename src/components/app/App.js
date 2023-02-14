@@ -6,8 +6,6 @@ import ReasonsList from '../reasons/reasonsList';
 import OurServices from '../ourServices/ourServices';
 import Promobuild from '../promoBuild/promoBuild';
 import ForCommunication from '../forCommunication/forCommunication';
-import Footer from '../footer/footer';
-import FooterSecond from '../footerSecond/footerSecond';
 import PriceList from '../priceList/priceList';
 
 import car from '../../resources/logo/free-icon-car-5670285.png'
@@ -164,60 +162,17 @@ class App extends Component {
     testData: [{}]
   }
 
-  filterPost = (items, filter) => {
-    switch (filter) {
-      case 'ремонт компьютеров':
-        return items.filter(item => item.descr === 'ремонт компьютеров')
-      case 'ремонт ноутбуков':
-        return items.filter(item => item.descr === 'ремонт ноутбуков')
-      default:
-        return items
-    }
-  }
-  filterPostBuild = (items, filterSecond) => {
-    switch (filterSecond) {
-      case 'настройка ноутбука на дому':
-        return items.filter(item => item.descr === 'настройка ноутбука на дому')
-      case 'чистка компьютера от пыли':
-        return items.filter(item => item.descr === 'чистка компьютера от пыли')
-      default:
-        return items
-    }
-  }
-
-  onFilterSelect = (filter) => {
-    this.setState({ filter: filter })
-  }
-  onFilterSelectSecond = (filterSecond) => {
-    this.setState({ filterSecond: filterSecond })
-  }
 
   render() {
-    const { testPrice, filter, servicesPrice,filterSecond } = this.state
-    const visibleData = this.filterPost(testPrice, filter)
-    const visibleBuild = this.filterPostBuild(servicesPrice, filterSecond)
+
     return (
       <div className='App'>
-        {/* <View/> */}
         <NavBar />
         <Header />
         <ReasonsList data={this.state.data} />
         <OurServices services={this.state.dataSeervices} />
         <Promobuild slider={this.state.slider} />
         <ForCommunication />
-{/*         <Footer build={this.state.build} services={this.state.services} contacts={this.state.contacts} />
-        <FooterSecond
-          build={this.state.build}
-          services={this.state.services}
-          contacts={this.state.contacts}
-          testPrice={this.state.testPrice}
-          onFilterSelect={this.onFilterSelect}
-          onFilterSelectSecond={this.onFilterSelectSecond}
-          visibleData={visibleData}
-          visibleBuild={visibleBuild}
-          deleteItem={this.deleteItem}
-          testData={this.state.testData} /> */}
-          {/* <PriceFooter/> */}
           <PriceList/>
       </div>
     )
@@ -225,44 +180,5 @@ class App extends Component {
 
 
 }
-
-/* const View = () => {
-  return (
-    <div className='formApp'>
-     <form onSubmit={handleOnSubmit}>
-        <Form.Field
-          id='form-input-control-email'
-          control={Input}
-          label='Email'
-          name='user_email'
-          placeholder='Email…'
-          required
-          icon='mail'
-          iconPosition='left'
-        />
-        <Form.Field
-          id='form-input-control-last-name'
-          control={Input}
-          label='Name'
-          name='uer_name'
-          placeholder='Name…'
-          required
-          icon='user circle'
-          iconPosition='left'
-        />
-       <Form.Field
-          id='form-input-control-last-opinion'
-          control={TextArea}
-          label='Message'
-          name='user_message'
-          placeholder='Message...'
-          required
-        />
-        <Button type='submit' color='green'>Submit</Button>
-      </form>
-    </div>
-  )
-} */
-
 
 export default App;

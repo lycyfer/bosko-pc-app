@@ -9,13 +9,13 @@ import './ourServices.css'
 const OurServices = (props) => {
     const element = props.services.map(item => {
         return (
-            <Col md={4}>
+            <div>
                 <div className="services_card mobile_card_2" style={{ 'background': `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${item.img}) center center no-repeat` }}>
                     <div className="services_title">{item.descr}</div>
                     <div className="services_plus">
                     </div>
                 </div>
-            </Col>
+            </div>
         )
     })
     return (
